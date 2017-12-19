@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YJCardItem.h"
 
 @interface YJCardCell : UICollectionViewCell
 
+@property (nonatomic, strong) YJCardItem *item;
 @end

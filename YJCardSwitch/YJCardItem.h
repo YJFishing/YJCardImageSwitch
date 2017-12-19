@@ -10,4 +10,7 @@
 
 @interface YJCardItem : NSObject
 
+@property (nonatomic, strong) NSString *imageName;
+@property (nonatomic, strong) NSString *title;
+
 @end
