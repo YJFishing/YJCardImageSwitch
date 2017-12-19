@@ -55,9 +55,9 @@
     //最小滚动距离
     CGFloat dragMinDistance = self.bounds.size.width / 20.0f;
     if (_dragStartX - _dragEndX >= dragMinDistance) {
-        _selectedIndex += 1;
-    }else if (_dragEndX - _dragStartX >= dragMinDistance) {
         _selectedIndex -= 1;
+    }else if (_dragEndX - _dragStartX >= dragMinDistance) {
+        _selectedIndex += 1;
     }
     NSInteger maxIndex = [_collectionView numberOfItemsInSection:0] - 1;
     _selectedIndex = _selectedIndex < 0 ? 0 : _selectedIndex;
@@ -102,6 +102,7 @@
 //手指拖动开始
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     _dragStartX = scrollView.contentOffset.x;
+    NSLog(@"dragStartX = %f",_dragStartX);
 }
 
 //手指拖动停止
@@ -110,6 +111,7 @@
         return;
     }
     _dragEndX = scrollView.contentOffset.x;
+    NSLog(@"dragEndX = %f",_dragEndX);
     dispatch_async(dispatch_get_main_queue(), ^{
         [self fixCellToCenter];
     });

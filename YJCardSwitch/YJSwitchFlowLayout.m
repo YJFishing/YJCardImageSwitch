@@ -55,7 +55,7 @@ static float CardHeightScale = 0.8f;
     for (UICollectionViewLayoutAttributes *attribute in arr) {
         CGFloat distance = fabs(attribute.center.x - centerX);
         CGFloat apartScale = distance/self.collectionView.bounds.size.width;
-        CGFloat scale = fabs(apartScale * M_PI_4);
+        CGFloat scale = fabs(cos(apartScale * M_PI_4));
         attribute.transform = CGAffineTransformMakeScale(scale, scale);
     }
     return arr;
