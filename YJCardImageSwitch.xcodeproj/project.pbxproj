@@ -27,6 +27,10 @@
 		390EA3101FE8DEC20035D39D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 390EA3031FE8DEC20035D39D /* 3.png */; };
 		390EA3111FE8DEC20035D39D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 390EA3041FE8DEC20035D39D /* 1.png */; };
 		390EA3131FE8DF250035D39D /* DataPropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 390EA3121FE8DF250035D39D /* DataPropertyList.plist */; };
+		390EA3171FE8E2040035D39D /* YJCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 390EA3161FE8E2040035D39D /* YJCardCell.m */; };
+		390EA31A1FE8E2160035D39D /* YJCardItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 390EA3191FE8E2160035D39D /* YJCardItem.m */; };
+		390EA31D1FE8E2370035D39D /* YJCardSwtichView.m in Sources */ = {isa = PBXBuildFile; fileRef = 390EA31C1FE8E2370035D39D /* YJCardSwtichView.m */; };
+		390EA3201FE8E25E0035D39D /* YJSwitchFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 390EA31F1FE8E25E0035D39D /* YJSwitchFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,14 @@
 		390EA3031FE8DEC20035D39D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		390EA3041FE8DEC20035D39D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		390EA3121FE8DF250035D39D /* DataPropertyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataPropertyList.plist; sourceTree = "<group>"; };
+		390EA3151FE8E2040035D39D /* YJCardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJCardCell.h; sourceTree = "<group>"; };
+		390EA3161FE8E2040035D39D /* YJCardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJCardCell.m; sourceTree = "<group>"; };
+		390EA3181FE8E2160035D39D /* YJCardItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJCardItem.h; sourceTree = "<group>"; };
+		390EA3191FE8E2160035D39D /* YJCardItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJCardItem.m; sourceTree = "<group>"; };
+		390EA31B1FE8E2370035D39D /* YJCardSwtichView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJCardSwtichView.h; sourceTree = "<group>"; };
+		390EA31C1FE8E2370035D39D /* YJCardSwtichView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJCardSwtichView.m; sourceTree = "<group>"; };
+		390EA31E1FE8E25E0035D39D /* YJSwitchFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJSwitchFlowLayout.h; sourceTree = "<group>"; };
+		390EA31F1FE8E25E0035D39D /* YJSwitchFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJSwitchFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 		390EA2D41FE8DE520035D39D = {
 			isa = PBXGroup;
 			children = (
+				390EA3141FE8E1C20035D39D /* YJCardSwitch */,
 				390EA2F61FE8DEC20035D39D /* resources */,
 				390EA2DF1FE8DE520035D39D /* YJCardImageSwitch */,
 				390EA2DE1FE8DE520035D39D /* Products */,
@@ -127,6 +140,21 @@
 				390EA3041FE8DEC20035D39D /* 1.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		390EA3141FE8E1C20035D39D /* YJCardSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				390EA3151FE8E2040035D39D /* YJCardCell.h */,
+				390EA3161FE8E2040035D39D /* YJCardCell.m */,
+				390EA3181FE8E2160035D39D /* YJCardItem.h */,
+				390EA3191FE8E2160035D39D /* YJCardItem.m */,
+				390EA31B1FE8E2370035D39D /* YJCardSwtichView.h */,
+				390EA31C1FE8E2370035D39D /* YJCardSwtichView.m */,
+				390EA31E1FE8E25E0035D39D /* YJSwitchFlowLayout.h */,
+				390EA31F1FE8E25E0035D39D /* YJSwitchFlowLayout.m */,
+			);
+			path = YJCardSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390EA3171FE8E2040035D39D /* YJCardCell.m in Sources */,
+				390EA31D1FE8E2370035D39D /* YJCardSwtichView.m in Sources */,
 				390EA2E51FE8DE520035D39D /* ViewController.m in Sources */,
 				390EA2F01FE8DE520035D39D /* main.m in Sources */,
+				390EA3201FE8E25E0035D39D /* YJSwitchFlowLayout.m in Sources */,
+				390EA31A1FE8E2160035D39D /* YJCardItem.m in Sources */,
 				390EA2E21FE8DE520035D39D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
